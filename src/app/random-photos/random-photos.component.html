@@ -1,0 +1,16 @@
+<section class="section">
+    <div class="container">
+        <button (click)="onButtonClick()" class="button is-medium is-link">Get a Photo</button>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Result</h1>
+        <h2 class="subtitle">
+            The random photo will be displayed below.
+        </h2>
+        <img *ngIf="photoUrl" class="image" [src]="photoUrl" />
+    </div>
+</section>
+
